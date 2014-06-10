@@ -1,0 +1,300 @@
+/*
+
+#sidebar-right{display:none !important;}
+#main-content{width:100% !important;}
+*/
+/********************
+	Typography
+*********************/
+
+#master_container h1, #master_container h2, #master_container h3, #master_container h4, #master_container p {
+	border: none;
+	color: white;
+}
+#master_container p {margin-top: 0px; padding-bottom: 0px;}
+
+#r-n-header-content h1 {
+	font-size: 39px ;
+	line-height: 30px;
+	text-align: center;
+	
+}
+
+#r-n-header-content h3 {
+	padding-top: 10px;
+	font-size: 20px;
+	text-align: center;		
+	color: #91e5b6;
+}
+/*
+#r-n-header-labs {
+	font-size: 16px;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+#r-n-header-labs h2 a, #r-n-header-labs h2  { 
+	padding-top: 20px; 29, 20, 9
+	color: #fff; 
+	font-family: "Avenir LT W02 85 Heavy",verdana,sans-serif !important;
+	padding-left: 5px;
+	padding-right: 5px;	
+}*/
+/*
+#r-n-header-labs h2 a:hover {
+	text-decoration: none;
+		color: #91e5b6;
+
+}*/
+
+/*#r-n-header-labs.one-line h2 {
+	padding-top: 29px;
+}
+#r-n-header-labs.two-line h2 {
+	padding-top: 20px;
+}
+#r-n-header-labs.three-line h2 {
+	padding-top: 9px;
+}*/
+
+#r-n-sc-site {
+	width: 100%;
+	height: 100px;
+	border-top: 3px solid #ffffff;
+	text-align: center;
+	margin-top: 10px;
+	padding-top: 10px;
+}
+
+#r-n-sc-site a {	
+	font-family: "Avenir LT W02 85 Heavy",verdana,sans-serif;	
+	font-size: 16px;
+	margin: 10px;
+	color: #91e5b6;
+}
+
+#r-n-sc-site a:hover {
+	text-decoration: none;
+	color: #ffffff;	
+}
+
+/***************
+Right Nav
+****************/
+
+#right-nav {
+	position: absolute;
+	width: 0px;
+	height: 100%;
+	z-index: 2;
+	right: 0px;
+	top: 0px;
+}
+
+#r-n-header {
+	position: relative;
+	top: 0px;
+	left: -300px;
+	width: 300px;
+	height: 100px;
+	z-index: 3;
+}
+
+#r-n-header-content {
+	width: 100%;
+	height: 100px;
+	background-color:#2E2E2D;
+	background-color:rgba(2,2,0,0.9);
+}
+
+#r-n-subcontainer {	
+	left: -300px;
+	position: absolute;
+	width: 300px;
+	background-color:#4C4C4B;
+	background-color:rgba(2,2,0,0.7);
+}
+
+/*Lab info*/
+#r-n-navigate {
+	width: 100%;
+	height: 55px;
+}
+
+#previous-nav {
+	width: 50%;
+	float: left;
+	border-right: 3px solid #ffffff;
+}
+#next-nav {
+	width: 49%;
+	float: left;
+}
+
+.nav-buttons {
+	height: 100%;
+	border-top: 3px solid #ffffff;
+	border-bottom: 3px solid #ffffff !important; 
+}
+
+.nav-buttons h4 {
+	text-align: center;
+	padding-top: 6px;
+}
+
+.nav-buttons p {
+	text-align: center;
+	font-size: 20px;
+	font-family: "Avenir LT W02 85 Heavy",verdana,sans-serif;
+	color: #91e5b6 !important;
+}
+
+.nav-buttons:hover {
+	background-color:#2E2E2D;
+	background-color:rgba(2,2,0,0.9);
+}
+
+.nav-buttons.first, .nav-buttons .last, .nav-buttons .first:hover, .nav-buttons .last:hover {
+	background-color:#666664;
+	/*background-color:rgba(2,2,0,0.5) !important;*/
+
+}
+
+/*
+.facts-contact {
+	margin: 10px;
+}*/
+
+
+
+@media (max-width: 960px) {
+ 
+}
+
+@media (max-width: 770px) {
+	 #r-n-header-lab {
+		display: none !important;
+	}
+	#r-n-header {
+		height: 85px;
+	}
+
+	#r-n-header-content h1 {
+		font-size: 20px;
+		line-height: 15px;
+	}
+
+	#r-n-header-content h3 {
+		font-size: 12px;
+		padding-top: 5px;
+	}
+
+	#r-n-header-content {
+		height: 50px;
+	}
+	#r-n-header-labs {
+		font-size: 12px;
+		line-height: 12px;
+		text-align: center;		
+		width: 100%;
+		height: 35px;
+	}
+	#r-n-header-labs h2 {
+		padding-top:5px;
+	}
+
+	#r-n-navigate {
+		height: 35px;
+	}
+	.nav-buttons h4 {padding-top: 0px; font-size: 12px;padding-bottom: 0px}
+	.nav-buttons p {font-size: 13px; }
+	#r-n-sc-info2 {
+		display: none;
+	}
+	#r-n-sc-site {
+		border-top: none;
+		padding-top: 0px;
+		height: 0px;
+	}
+	#r-n-sc-lab {
+		height: 16%;
+	}
+	#see-more {
+		display: none;
+	}
+	#see-more.inactive {
+		display: block;
+	}
+
+}
+
+@media (max-width: 570px) {
+	#master_container {
+		height: 360px !important;
+	}
+	#r-n-header {
+		width: 100%;
+		left: 0px !important
+	}
+	#right-nav {
+		width: 100%;
+		height: 0px;
+	}
+	#r-n-subcontainer {
+		width: 100%;
+		left: 0px;
+		height: 0px;
+	}
+	#r-n-sc-lab {width: 100%;}
+
+	.slide-tab {
+		left: 100%;
+	}
+
+	#see-more.active {
+		left: -58px;
+	}
+
+	.slide-tab.active {
+		left: 0px;
+	}
+	#see-more.inactive {
+		left: 242px;
+	}
+
+	.slide-tab.inactive {
+		left: 300px;
+	}
+	#r-n-navigate {
+		display: none;
+	}
+	#r-n-sc-lab {
+		height: 8%;
+	}
+	#r-n-sc-site {
+		margin-top: 0px;
+		height: 28px;
+		background-color:#4C4C4B;
+		background-color: rgba(2,2,0,0.7);
+	}
+	#plus {
+		top: inherit;
+		bottom: 101px;
+	}
+	#minus {
+		top: inherit;
+		bottom: 50px;
+	}
+	#usa {
+		top: inherit;
+		bottom: 0px;
+	}
+}
+
+@media (max-width: 480px) {
+
+}
+
+@media (max-width: 320px) {
+
+}
