@@ -11,13 +11,16 @@
 	border: none;
 	color: white;
 }
-#master_container p {margin-top: 0px; padding-bottom: 0px;}
+
+#master_container h4 {padding-top: 18px;}
+
+#master_container p {margin-top: 0px; padding-bottom: 0px; padding-left: 10px; padding-right: 10px; margin-bottom: 10px;}
 
 #r-n-header-content h1 {
-	font-size: 39px ;
-	line-height: 30px;
+	font-size: 38px ;
+	line-height: 32px;
 	text-align: center;
-	
+	padding-top: 3px;
 }
 
 #r-n-header-content h3 {
@@ -152,6 +155,7 @@ Right Nav
 .nav-buttons:hover {
 	background-color:#2E2E2D;
 	background-color:rgba(2,2,0,0.9);
+	cursor: pointer;
 }
 
 .nav-buttons.first, .nav-buttons .last, .nav-buttons .first:hover, .nav-buttons .last:hover {
