@@ -43,7 +43,7 @@ Map
 		position: absolute;
 	}
 	.parts:hover {
-		background-color: pink	!important;
+		/*background-color: pink	!important;*/
 	}
 	#anemometer {
 		left: 63.5%;
