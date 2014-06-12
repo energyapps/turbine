@@ -14,7 +14,7 @@
 
 #master_container h4 {padding-top: 18px;}
 
-#master_container p {margin-top: 0px; padding-bottom: 0px; padding-left: 10px; padding-right: 10px; margin-bottom: 10px;}
+#master_container p {margin-top: 0px; padding-bottom: 0px; padding-left: 10px; padding-right: 10px; margin-bottom: 5px;}
 
 #r-n-header-content h1 {
 	font-size: 38px ;
@@ -138,6 +138,12 @@ Right Nav
 	height: 100%;
 	border-top: 3px solid #ffffff;
 	border-bottom: 3px solid #ffffff !important; 
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 .nav-buttons h4 {
@@ -158,18 +164,22 @@ Right Nav
 	cursor: pointer;
 }
 
-.nav-buttons.first, .nav-buttons .last, .nav-buttons .first:hover, .nav-buttons .last:hover {
+.nav-buttons.gray, .nav-buttons .gray:hover {
 	background-color:#666664;
+	cursor: default;
 	/*background-color:rgba(2,2,0,0.5) !important;*/
 
+}
+
+p.numbers {
+	margin-bottom: 5px !important;
+	text-align: right;
 }
 
 /*
 .facts-contact {
 	margin: 10px;
 }*/
-
-
 
 @media (max-width: 960px) {
  

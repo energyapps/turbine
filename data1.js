@@ -27,7 +27,7 @@ var data = [
     "id":"1",
     "cls":"gear-box",
     "name":"Gear box",
-    "description":"Connects the low-speed shaft to the high-speed shaft and increases the rotational speeds from about 30-60 rotations per minute (rpm), to about 1,000-1,800 rpm; this is the rotational speed required by most generators to produce electricity. The gear box is a costly (and heavy) part of the wind turbine and engineers are exploring \\"
+    "description":"Connects the low-speed shaft to the high-speed shaft and increases the rotational speeds from about 30-60 rotations per minute (rpm), to about 1,000-1,800 rpm; this is the rotational speed required by most generators to produce electricity. The gear box is a costly (and heavy) part of the wind turbine and engineers are exploring \"direct-drive\" generators that operate at lower rotational speeds and don't need gear boxes."
   },
   {
     "id":"1",

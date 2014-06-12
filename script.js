@@ -3,26 +3,65 @@
 var content = document.getElementById('r-n-sc-info2');
 var text = "";
 var title = "";
+var o = 1;
+//iterations is total number of description iterations plus one (home screen)
+var iterations = data.length + 1;
 
 (function ($) { 
 
 
   $(document).ready(function() { 
-      console.log('hello')
 
+
+// Might not need this
     // $('.parts').bind('touchstart touchend', function(e) {
     //     e.preventDefault();
     //     $(this).toggleClass('hover_effect');
     //     console.log('hover')
     // });
 
+  $('.nav-buttons').on("click", function(e) {
+    //if click next and gray on previous, remove
+    //if click previous and gray on next, remove
+    //Add a step to o, remove a step from o
+    current = $(this).attr('id')
+    status = $(this).attr('class')
 
+    if (current == "previous-nav" && o > 1) {  
+      // remove gray from next on end
+      if (o == iterations) {$('#next-nav').toggleClass('gray')};
+      if (o == 2) {$('#previous-nav').toggleClass('gray')};
+      // reduce o by 1;
+      o -= 1;
+    } else if (current == "next-nav" && o < iterations) {
+      if (o == 1) {$('#previous-nav').toggleClass('gray')};
+      if (o == (iterations - 1)) {$('#next-nav').toggleClass('gray')};
+      // increase o by 1;
+      o += 1;
+    };
+
+    if (o > 1) {
+      //Add the data description to the DOM
+      content.innerHTML = "<center><h4>" + data[o-2].name + "</h4></center>" + 
+                            "<p>" + data[o-2].description + "</p>" +
+                            "<p class='numbers'>" + o + "/17</p>";      
+    } else {
+      content.innerHTML = "<center><h4>Info</h4></center>" + 
+      "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodt empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>" +
+                            "<p class='numbers'>" + o + "/17</p>";t
+    };
+
+
+  });
 
     $('.parts').on( "mouseover", function(e) {
         e.preventDefault();
+        
+      // Add's a current class "hover_effect"
         $(this).toggleClass('hover_effect');
+      
+      // grabs the hovers data name and matches it with the data
         layer = $(this).attr('data-name')
-        // console.log(layer)
 
         for (var i = 0; i < data.length; i++) {
 
@@ -32,8 +71,24 @@ var title = "";
           };  
         };
 
+      //Add the data description to the DOM
         content.innerHTML = "<center><h4>" + title + "</h4></center>" + 
                             "<p>" + text + "</p>";
+    });
+
+// On mouseout, return to position within rotation of information. 
+    $('.parts').on("mouseout", function(e) {
+      if (o > 1) {
+    
+      content.innerHTML = "<center><h4>" + data[o-2].name + "</h4></center>" + 
+                              "<p>" + data[o-2].description + "</p>" +
+                            "<p class='numbers'>" + o + "/17</p>";      
+      } else {
+        content.innerHTML = "<center><h4>Info</h4></center>" + 
+        "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodt empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>" +
+                            "<p class='numbers'>" + o + "/17</p>"; 
+
+      };
     });
 
 
