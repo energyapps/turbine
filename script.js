@@ -59,7 +59,8 @@ var iterations = data.length + 1;
         
       // Add's a current class "hover_effect"
         $(this).toggleClass('hover_effect');
-      
+      // console.log('TEST')
+        $(this.firstElementChild).toggleClass('turnon');
       // grabs the hovers data name and matches it with the data
         layer = $(this).attr('data-name')
 
@@ -78,6 +79,9 @@ var iterations = data.length + 1;
 
 // On mouseout, return to position within rotation of information. 
     $('.parts').on("mouseout", function(e) {
+      
+      $(this.firstElementChild).toggleClass('turnon');
+
       if (o > 1) {
     
       content.innerHTML = "<center><h4>" + data[o-2].name + "</h4></center>" + 

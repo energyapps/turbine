@@ -55,7 +55,7 @@ var data = [
   },
   {
     "id":"1",
-    "cls":"pitch",
+    "cls":"pitch-system",
     "name":"Pitch",
     "description":"Turns (or pitches) blades out of the wind to control the rotor speed, and to keep the rotor from turning in winds that are too high or too low to produce electricity."
   },
