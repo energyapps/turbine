@@ -16,7 +16,10 @@ Map
     position: relative;
     width: 100%;
     height: 600px;
-    background-color: pink;
+   	background-image: url('img/BG_sky.png');
+   	background-position: top left;
+   	background-repeat: repeat-x;
+   	overflow: hidden
  }
  #outer_container { 
  	position:absolute; 
@@ -89,7 +92,7 @@ Map
 
 	.parts {				
 		position: absolute;
-		/*border: 3px solid #333;*/
+		border: 3px solid #333;
 	}
 	.parts:hover {
 		/*border: 3px solid #333;*/
@@ -173,27 +176,27 @@ Map
 		height: 4%;
 		z-index: 192;	
 	}		
-	#blade1 {
+/*	#blade1 {
 		left: 35.5%;
 		top: 52.5%;
 		width: 55%;
 		height: 18%;
 		z-index: 188;			
-	}
-	#blade2 {
-		left: 23%;
+	}*/
+	#blade {
+		left: 10%;
 		top: 0%;
-		width: 12%;
+		width: 35%;
 		height: 50%;
 		z-index: 188;	
 	}
-	#blade3 {
+/*	#blade3 {
 		left: 7%;
 		top: 54%;
 		width: 25%;
 		height: 40%;
 		z-index: 188;
-	}
+	}*/
 	#tower {
 		left: 35%;
 		top: 68%;
