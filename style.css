@@ -19,7 +19,7 @@ Map
    	background-image: url('img/BG_sky.png');
    	background-position: top left;
    	background-repeat: repeat-x;
-   	overflow: hidden
+   	overflow: hidden;
  }
  #outer_container { 
  	position:absolute; 
@@ -92,7 +92,7 @@ Map
 
 	.parts {				
 		position: absolute;
-		border: 3px solid #333;
+		/*border: 3px solid #333;*/
 	}
 	.parts:hover {
 		/*border: 3px solid #333;*/
