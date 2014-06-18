@@ -70,11 +70,25 @@
           </div>    
         </div>
         <div id="image1_container">
-          <img src="test.jpg">
+          <!-- <img src="test.jpg"> -->
+          <div id="subimages">
+            <div id="rotor_image"> 
+              <img src="img/rotor.png">
+            </div>
+            <div id="blades_image"> 
+              <img src="img/Turbine-GIF2.gif">
+            </div>
+            <div id="gears_image"> 
+              <img src="img/gears.png">
+            </div>
+            <div id="anem_image">
+              <img src="img/anem4.gif">
+            </div>
+          </div>
           <div id="cover">
             <div id="anemometer" class="parts" data-name="anemometer">
               <div class="tooltip-container">
-                  <div class="triangle"></div><div class="tooltip">Anemometer</div></div>
+                <div class="triangle"></div><div class="tooltip">Anemometer</div></div>
             </div>
             <div id="wind-vane" class="parts" data-name="wind-vane">
               <div class="tooltip-container">
@@ -94,7 +108,7 @@
             </div>
             <div id="generator" class="parts" data-name="generator">
               <div class="tooltip-container">
-                  <div class="triangle"></div><div class="tooltip">Generator</div></div>
+                <div class="triangle"></div><div class="tooltip">Generator</div></div>
             </div>
             <div id="gear-box" class="parts" data-name="gear-box">
               <div class="tooltip-container">
@@ -102,7 +116,7 @@
             </div>
             <div id="low-speed-shaft" class="parts" data-name="low-speed-shaft">
               <div class="tooltip-container">
-                  <div class="triangle"></div><div class="tooltip">Low Speed Shaft</div></div>
+                <div class="triangle"></div><div class="tooltip">Low Speed Shaft</div></div>
             </div>
             <div id="rotor" class="parts" data-name="rotor">
               <div class="tooltip-container">
@@ -156,12 +170,19 @@
 <!-- Libraries (references locally or externally)-->
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<script src="libraries/highcharts/highcharts.js"></script>
-<script src="libraries/leaflet.js"></script>
+<!-- <script type="text/javascript" src="js/jquery-css-transform.js"></script>
+<script type="text/javascript" src="js/jquery-animate-css-rotate-scale.js"></script>
+<script type="text/javascript">
+  $(document).ready(function bladeAnimation() {
+    $("#blades_image img").
+      animate({rotate:'-=3600deg'},100000, bladeAnimation);                
+});
+</script>
+ -->
+
 
 <!-- Data -->
   <script type="text/javascript" src="data1.js"></script>
-
 <!-- Scripts -->
   <script type="text/javascript" src="script.js"></script>
 

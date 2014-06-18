@@ -15,13 +15,21 @@ Map
     text-transform: none !important;
     position: relative;
     width: 100%;
-    height: 800px;
+    height: 600px;
+    background-color: pink;
  }
- #outer_container { position:absolute; top:0; height: 500px; width:99%; border: 4px solid #333;}
+ #outer_container { 
+ 	position:absolute; 
+ 	top:0; 
+ 	height: 100%; 
+ 	width:100%; 
+ 	/*border: 4px solid #333;*/
+ }
 
 	#image1_container {
 		position: absolute;
-		height: 100%;
+		height: 100%; /*130%*/
+		width: 646px; /*588px*/
 	}
 
 /*Covers the iamge to make it seem like background image*/
@@ -37,6 +45,47 @@ Map
 	#image1_container img {
 		height: 100%;
 	}
+	#rotor_image img, #blades_image img, #gears_image img, #anem_image img {
+		width: 100%
+	} 
+
+/*Images of hung together*/
+	#rotor_image {
+		position: absolute;
+		left: 26.7%;
+		top: 46.5%;
+		width: 38.9%;
+	}
+
+	/*#blades_image {
+		position: absolute;
+		left: 8%;
+		top: 4%;
+		width: 65.5%;
+	}*/
+
+	#blades_image {
+		position: absolute;
+		left: -7%;
+		top: 7%;
+		width: 82%;
+	}
+
+	#gears_image {
+		position: absolute;
+		left: 32%;
+		top: 48.9%;
+		width: 42.0%;
+	}
+	
+	#anem_image {
+		position: absolute;
+		left: 63%;
+		top: 59%;
+		width: 9%;
+	}
+
+	/*Tooltips*/
 
 	.parts {				
 		position: absolute;
@@ -188,7 +237,7 @@ Map
 		left: 100%;
 		top: 50%;
 		margin-top: -10px;
-		min-width: 1000px;
+		min-width: 200px;
 		display: none;
 	}
 	.tooltip {
@@ -219,7 +268,7 @@ Map
 
 @media (min-width: 1030px) {
     #master_container { 
-    	width: 900px;
+    	width: 100%;
     }
 }
 
