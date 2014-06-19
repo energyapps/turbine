@@ -2,6 +2,7 @@
 	height: auto;
 	position: absolute;
 	left: -100%;
+	z-index: -1;
 }
 
 .cloud img {width: 100%; display: block !important; opacity: 1 !important;}

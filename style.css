@@ -82,7 +82,7 @@ Map
 
 	#anem_image {
 		position: absolute;
-		left: 63%;
+		left: 63.8%;
 		top: 59%;
 		width: 9%;
 	}
@@ -97,10 +97,10 @@ Map
 		/*border: 3px solid #333;*/
 	}
 	#anemometer {
-		left: 63.5%;
-		top: 61%;
-		width: 7%;
-		height: 7%;
+		left: 64.5%;
+		top: 59.5%;
+		width: 7.5%;
+		height: 8%;
 		z-index: 202;
 	}
 	#wind-vane {
@@ -115,20 +115,20 @@ Map
 		top: 64.5%;
 		width: 5%;
 		height: 6.5%;
-		z-index: 204;	
+		z-index: 204;			
 	}
 	#high-speed-shaft {
-		left: 56%;
+		left: 56.3%;
 		top: 70.5%;
 		width: 3%;
-		height: 3.5%;
-		z-index: 205;	
+		height: 3.2%;
+		z-index: 205;			
 	}
 	#nacelle {
 		left: 53%;
-		top: 61%;
-		width: 14%;
-		height: 20%;
+		top: 65%;
+		width: 13%;
+		height: 16%;
 		z-index: 190;	
 	}
 	#generator {
@@ -157,7 +157,7 @@ Map
 	#rotor {
 		left: 26%;
 		top: 46%;
-		width: 12%;
+		width: 8%;
 		height: 12%;
 		z-index: 191;	
 	}	
@@ -183,10 +183,10 @@ Map
 		z-index: 188;	
 	}
 	#tower {
-		left: 35%;
-		top: 68%;
-		width: 17%;
-		height: 29%;
+		left: 37%;
+		top: 70%;
+		width: 14%;
+		height: 31%;
 		z-index: 189;
 	}
 	#yaw-drive1 {

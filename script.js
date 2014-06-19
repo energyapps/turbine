@@ -44,7 +44,7 @@ var iterations = data.length + 1;
       // reduce o by 1;
       o -= 1;
     } else if (current == "next-nav" && o < iterations) {
-
+console.log(o)
       if (o >= 0) {
         $('.parts:nth-child('+ o + ')').children('div').toggleClass('turnon');    
        }
