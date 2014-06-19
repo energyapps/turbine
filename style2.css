@@ -245,6 +245,9 @@ p.numbers {
 		font-size: 14px;
 	}
 	#previous-nav {
-		border-right: 1px;
+		border-right: none;
+	}
+	#next-nav {
+		width: 50%;
 	}
 }
