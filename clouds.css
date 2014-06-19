@@ -1,7 +1,7 @@
 .cloud {
 	height: auto;
 	position: absolute;
-	left: 50%;
+	left: -100%;
 	z-index: -1;
 }
 
