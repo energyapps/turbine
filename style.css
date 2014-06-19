@@ -63,7 +63,8 @@ Map
 		position: absolute;
 		left: 26.7%;
 		top: 46.5%;
-		width: 38.9%;
+		width: 39.5%;
+		height: 30.2%;
 	}
 
 	#blades_image {
@@ -71,6 +72,7 @@ Map
 		left: -7%;
 		top: 7%;
 		width: 82%;
+		height: 88%;
 	}
 
 	#gears_image {
@@ -78,6 +80,7 @@ Map
 		left: 32%;
 		top: 48.9%;
 		width: 43.0%;
+		height: 51.2%;		
 	}
 
 	#anem_image {
@@ -85,6 +88,7 @@ Map
 		left: 63.8%;
 		top: 59%;
 		width: 9%;
+		height: 9.9%;
 	}
 
 	/*Tooltips*/
