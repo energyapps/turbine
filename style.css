@@ -94,7 +94,7 @@ Map
 	/*Tooltips*/
 
 	.parts {				
-		position: absolute;
+		position: absolute;		
 		/*border: 3px solid #333;*/
 	}
 	.parts:hover {

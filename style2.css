@@ -187,9 +187,9 @@ p.numbers {
 		display: block !important;
 		opacity: 1 !important;
 	}*/
-	#blades_image {
+	/*#blades_image {
 		top: 11%;
-	}
+	}*/
 
 	#anem_image {
 		top: 58.5%;
@@ -219,12 +219,16 @@ p.numbers {
 	#r-n-sc-info2 {
 		padding-top: 5px;
 	}
+	#subimages_class {
+		height: auto !important;
+	}
 }
 
 @media (max-width: 440px) {
 	#image1_container {
 		top: 30px;
 	}
+
 }
 
 @media (max-width: 380px) {
