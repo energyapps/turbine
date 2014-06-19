@@ -173,7 +173,7 @@ p.numbers {
 
 @media (max-width: 570px) {
 	#master_container {
-		height: 360px !important;
+		height: 420px !important;
 	}
 	#image1_container {
 		position: absolute;
@@ -181,7 +181,7 @@ p.numbers {
 		padding-bottom: 100%;
 		height: auto;
 		left: 10px;
-		top: -50px;
+		top: -20px;
 	}
 
 	#blades_image {
@@ -222,9 +222,16 @@ p.numbers {
 	}
 }
 
+@media (max-width: 490px) {
+	#image1_container {
+		top: 20px;
+	}
+
+}
+
 @media (max-width: 440px) {
 	#image1_container {
-		top: 30px;
+		top: 70px;
 	}
 
 }
