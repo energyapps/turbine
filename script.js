@@ -25,34 +25,38 @@ var iterations = data.length + 1;
        // Turn all tooltips off
        $('.parts').children('div').removeClass('turnon');
 
-    if (current == "next-nav") {  
-       //turn the right one on.
-       
-    }
-
-    if (current == "previous-nav" && o > 1) {  
-
-      panda = o - 2
-      if (o >= 0) {
-        $('.parts:nth-child('+ panda + ')').children('div').toggleClass('turnon');    
-       }
-
-      // remove gray from next on end
-      if (o == iterations) {$('#next-nav').toggleClass('gray')};
-      if (o == 2) {$('#previous-nav').toggleClass('gray')};
+    if (current == "previous-nav" && o > 0) {  
       
-      // reduce o by 1;
-      o -= 1;
-    } else if (current == "next-nav" && o < iterations) {
-// console.log(o)
-      if (o >= 0) {
-        $('.parts:nth-child('+ o + ')').children('div').toggleClass('turnon');    
-       }
+      if (o == 1) {
+        o += 16;
+        $('.parts:nth-child(16)').children('div').toggleClass('turnon');
+      } 
+      else {
 
-      if (o == 1) {$('#previous-nav').toggleClass('gray')};
-      if (o == (iterations - 1)) {$('#next-nav').toggleClass('gray')};
-      // increase o by 1;
-      o += 1;
+        //Add the previous tooltip
+        panda = o - 2
+        if (o >= 0) {
+          $('.parts:nth-child('+ panda + ')').children('div').toggleClass('turnon');    
+         }
+        
+        // reduce o by 1;
+        o -= 1;
+      }
+    } 
+
+    else if (current == "next-nav" && o <= iterations) {
+
+      if (o == iterations) {
+        o -=16;
+        
+      } else {
+        if (o >= 0) {
+          $('.parts:nth-child('+ o + ')').children('div').toggleClass('turnon');    
+         }
+
+        // increase o by 1;
+        o += 1;
+      }
     };
 
     if (o > 1) {
@@ -61,9 +65,7 @@ var iterations = data.length + 1;
                             "<p>" + data[o-2].description + "</p>" +
                             "<p class='numbers'>" + o + "/17</p>";      
     } else {
-      content.innerHTML = "<center><h4>Info</h4></center>" + 
-      "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodt empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>" +
-                            "<p class='numbers'>" + o + "/17</p>";
+      content.innerHTML = "<p class='info'>Wind turbines operate on a simple principle. The energy in the wind turns two or three propeller-like blades around a rotor. The rotor is connected to the main shaft, which spins a generator to create electricity. Click NEXT to learn more.</p>";
     };
   });
 
@@ -112,9 +114,7 @@ var iterations = data.length + 1;
                               "<p>" + data[o-2].description + "</p>" +
                             "<p class='numbers'>" + o + "/17</p>";      
       } else {
-        content.innerHTML = "<center><h4>Info</h4></center>" + 
-        "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodt empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>" +
-                            "<p class='numbers'>" + o + "/17</p>"; 
+      content.innerHTML = "<p class='info'>Wind turbines operate on a simple principle. The energy in the wind turns two or three propeller-like blades around a rotor. The rotor is connected to the main shaft, which spins a generator to create electricity. Click NEXT to learn more.</p>";
       };
     });
 
