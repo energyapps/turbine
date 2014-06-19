@@ -11,16 +11,8 @@ var iterations = data.length + 1;
 
 (function ($) { 
 
-
   $(document).ready(function() { 
 
-
-// Might not need this
-    // $('.parts').bind('touchstart touchend', function(e) {
-    //     e.preventDefault();
-    //     $(this).toggleClass('hover_effect');
-    //     console.log('hover')
-    // });
 
   $('.nav-buttons').on("click", function(e) {
     //if click next and gray on previous, remove
@@ -33,12 +25,18 @@ var iterations = data.length + 1;
        // Turn all tooltips off
        $('.parts').children('div').removeClass('turnon');
 
+    if (current == "next-nav") {  
        //turn the right one on.
-       if (o >= 0) {
-        $('.parts:nth-child('+ o + ')').children('div').toggleClass('turnon');    
-       }
+       
+    }
 
     if (current == "previous-nav" && o > 1) {  
+
+      panda = o - 2
+      if (o >= 0) {
+        $('.parts:nth-child('+ panda + ')').children('div').toggleClass('turnon');    
+       }
+
       // remove gray from next on end
       if (o == iterations) {$('#next-nav').toggleClass('gray')};
       if (o == 2) {$('#previous-nav').toggleClass('gray')};
@@ -46,6 +44,11 @@ var iterations = data.length + 1;
       // reduce o by 1;
       o -= 1;
     } else if (current == "next-nav" && o < iterations) {
+
+      if (o >= 0) {
+        $('.parts:nth-child('+ o + ')').children('div').toggleClass('turnon');    
+       }
+
       if (o == 1) {$('#previous-nav').toggleClass('gray')};
       if (o == (iterations - 1)) {$('#next-nav').toggleClass('gray')};
       // increase o by 1;
@@ -93,10 +96,11 @@ var iterations = data.length + 1;
 // On mouseout, return to position within rotation of information. 
     $('.parts').on("mouseout", function(e) {
 
-
+      
       //turn the original one on.
+      p = o -1;
        if (o >= 0) {
-        $('.parts:nth-child('+ o + ')').children('div').toggleClass('turnon');    
+        $('.parts:nth-child('+ p + ')').children('div').toggleClass('turnon');    
        }        
        
       

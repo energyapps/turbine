@@ -30,9 +30,11 @@ Map
  }
 
 	#image1_container {
+		z-index: 0;
 		position: absolute;
 		height: 100%; /*130%*/
 		width: 646px; /*588px*/
+		left: 80px;
 	}
 
 /*Covers the iamge to make it seem like background image*/
@@ -47,10 +49,14 @@ Map
 
 	#image1_container img {
 		height: 100%;
+		display: none;
+		opacity: 0;
 	}
 	#rotor_image img, #blades_image img, #gears_image img, #anem_image img {
-		width: 100%
-	} 
+		width: 100%;
+		display: block !important;
+		opacity: 1 !important;
+	}
 
 /*Images of hung together*/
 	#rotor_image {
@@ -59,13 +65,6 @@ Map
 		top: 46.5%;
 		width: 38.9%;
 	}
-
-	/*#blades_image {
-		position: absolute;
-		left: 8%;
-		top: 4%;
-		width: 65.5%;
-	}*/
 
 	#blades_image {
 		position: absolute;
@@ -78,9 +77,9 @@ Map
 		position: absolute;
 		left: 32%;
 		top: 48.9%;
-		width: 42.0%;
+		width: 43.0%;
 	}
-	
+
 	#anem_image {
 		position: absolute;
 		left: 63%;
@@ -176,13 +175,6 @@ Map
 		height: 4%;
 		z-index: 192;	
 	}		
-/*	#blade1 {
-		left: 35.5%;
-		top: 52.5%;
-		width: 55%;
-		height: 18%;
-		z-index: 188;			
-	}*/
 	#blade {
 		left: 10%;
 		top: 0%;
@@ -190,13 +182,6 @@ Map
 		height: 50%;
 		z-index: 188;	
 	}
-/*	#blade3 {
-		left: 7%;
-		top: 54%;
-		width: 25%;
-		height: 40%;
-		z-index: 188;
-	}*/
 	#tower {
 		left: 35%;
 		top: 68%;

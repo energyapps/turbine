@@ -4,9 +4,10 @@
 <style type="text/css">
 	#image1_container {
 		position: absolute;
-		margin: 0 auto;
 		width: 100%;
+		padding-bottom: 100%;
 		border: 1px solid black;
+		background-color: yellow;
 	}
 
 	#cover {
@@ -20,6 +21,41 @@
 
 	#image1_container img {
 		width: 100%;
+		opacity: 0;
+	}
+
+	#rotor_image img, #blades_image img, #gears_image img, #anem_image img {
+		width: 100%;
+		opacity: 1 !important;
+	} 
+
+/*Images of hung together*/
+	#rotor_image {
+		position: absolute;
+		left: 26.7%;
+		top: 46.5%;
+		width: 38.9%;
+	}
+
+	#blades_image {
+		position: absolute;
+		left: -7%;
+		top: 11%;
+		width: 82%;
+	}
+
+	#gears_image {
+		position: absolute;
+		left: 32%;
+		top: 48.9%;
+		width: 43.0%;
+	}
+
+	#anem_image {
+		position: absolute;
+		left: 63%;
+		top: 59%;
+		width: 9%;
 	}
 
 	.parts {
@@ -175,7 +211,21 @@
 </head>
 <body>
 	<div id="image1_container">
-		<img src="test.jpg">
+		<!-- <img src="test.jpg"> -->
+		<div id="subimages">
+	        <div id="rotor_image"> 
+	          <img src="img/rotor.png">
+	        </div>
+	        <div id="blades_image"> 
+	          <img src="img/Turbine-GIF2.gif">
+	        </div>
+	        <div id="gears_image"> 
+	          <img src="img/mainparts-03.png">
+	        </div>
+	        <div id="anem_image">
+	          <img src="img/anem4.gif">
+	        </div>
+	    </div>
 		<div id="cover">
 			<div id="anemometer" class="parts"></div>
 			<div id="wind-vane" class="parts"></div>

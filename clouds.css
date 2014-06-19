@@ -4,7 +4,7 @@
 	left: -100%;
 }
 
-.cloud img {width: 100%;}
+.cloud img {width: 100%; display: block !important; opacity: 1 !important;}
 
 #cloud1 {
 	top: 10%;	
