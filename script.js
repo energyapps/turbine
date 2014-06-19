@@ -2,7 +2,7 @@
 
 var content = document.getElementById('r-n-sc-info2');
 var whichDiv = document.getElementById('cover');
-console.log(whichDiv.children)
+// console.log(whichDiv.children)
 var text = "";
 var title = "";
 var o = 1;
@@ -44,7 +44,7 @@ var iterations = data.length + 1;
       // reduce o by 1;
       o -= 1;
     } else if (current == "next-nav" && o < iterations) {
-console.log(o)
+// console.log(o)
       if (o >= 0) {
         $('.parts:nth-child('+ o + ')').children('div').toggleClass('turnon');    
        }
