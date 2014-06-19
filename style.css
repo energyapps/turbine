@@ -98,9 +98,9 @@ Map
 		/*border: 3px solid #333;*/
 	}
 	.parts:hover {
-	/*	background-color: pink;
+		background-color: pink;
 		border: 3px solid #333;
-		opacity: 0.5;*/
+		opacity: 0.5;
 	}
 	#anemometer {
 		left: 64.5%;
@@ -120,14 +120,14 @@ Map
 		left: 58.5%;
 		top: 64.5%;
 		width: 5%;
-		height: 6%;
+		height: 5.7%;
 		z-index: 204;			
 	}
 	#high-speed-shaft {
 		left: 56.3%;
-		top: 70.5%;
+		top: 69.5%;
 		width: 3%;
-		height: 3.2%;
+		height: 3.4%;
 		z-index: 205;			
 	}
 	#nacelle {
@@ -176,7 +176,7 @@ Map
 	}	
 	#brake {
 		left: 35.5%;
-		top: 60.5%;
+		top: 59.8%;
 		width: 4%;
 		height: 4%;
 		z-index: 192;	
@@ -195,25 +195,18 @@ Map
 		height: 25%;
 		z-index: 189;
 	}
-	#yaw-drive1 {
+	#yaw-drive {
 		left: 39%;
-		top: 69%;
+		top: 68.8%;
 		width: 10%;
-		height: 7%;
+		height: 5.5%;
 		z-index: 191;	
-	}
-	#yaw-drive2 {
-		left: 38.5%;
-		top: 65.8%;
-		width: 3.5%;
-		height: 5%;
-		z-index: 192;	
 	}
 	#yaw-motor {
 		left: 40%;
 		top: 75%;
 		width: 8%;
-		height: 9%;
+		height: 6.7%;
 		z-index: 192;	
 	}
 /*Tooltips*/
