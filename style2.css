@@ -180,19 +180,16 @@ p.numbers {
 		width: 100%;
 		padding-bottom: 100%;
 		height: auto;
-		left: 45px;
+		left: 10px;
 		top: -50px;
 	}
-/*	#image1_container img {
-		display: block !important;
-		opacity: 1 !important;
-	}*/
+
 	#blades_image {
 		top: 11%;
 		height: auto;
 	}
 
-#rotor_image, #gears_image { height: auto;}
+	#rotor_image, #gears_image { height: auto;}
 
 	#anem_image {
 		top: 58.5%;
