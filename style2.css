@@ -223,12 +223,12 @@ p.numbers {
 
 @media (max-width: 440px) {
 	#image1_container {
-		top: 10px;
+		top: 30px;
 	}
 }
 
 @media (max-width: 320px) {
 	#image1_container {
-		top: 30px;
+		top: 70px;
 	}
 }
