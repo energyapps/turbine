@@ -98,9 +98,9 @@ Map
 		/*border: 3px solid #333;*/
 	}
 	.parts:hover {
-		background-color: pink;
+/*		background-color: pink;
 		border: 3px solid #333;
-		opacity: 0.5;
+		opacity: 0.5;*/
 	}
 	#anemometer {
 		left: 64.5%;
@@ -200,7 +200,7 @@ Map
 		top: 68.8%;
 		width: 10%;
 		height: 5.5%;
-		z-index: 191;	
+		z-index: 195;	
 	}
 	#yaw-motor {
 		left: 40%;

@@ -1,3 +1,4 @@
+(function ($) { 
           
   // Move the Clouds
   $(document).ready(function cloud1(){
@@ -43,3 +44,4 @@
         animate({opacity: 1},cloud6)               
   }); 
 
+}(jQuery));  
