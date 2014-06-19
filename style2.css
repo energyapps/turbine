@@ -227,8 +227,24 @@ p.numbers {
 	}
 }
 
-@media (max-width: 320px) {
+@media (max-width: 380px) {
 	#image1_container {
-		top: 70px;
+		top: 50px;
+	}
+}
+
+@media (max-width: 320px) {
+
+	#master_container {
+		height: 400px !important;
+	}
+	#image1_container {
+		top: 117px;
+	}
+	#r-n-header-content h1 {
+		font-size: 14px;
+	}
+	#previous-nav {
+		border-right: 1px;
 	}
 }

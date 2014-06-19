@@ -41,3 +41,37 @@
 	width: 100px;
 	height: 62px;
 }
+
+@media (max-width: 440px) {
+.cloud { height: auto !important;}
+
+#cloud1 {
+	top: 10%;	
+	width: 100px;	
+}
+
+#cloud2 {
+	top: 20%;
+	width: 100px;
+}
+
+#cloud3 {
+	top: 15%;
+	width: 150px;		
+}
+
+#cloud4 {
+	top: 3%;
+	width: 50px;
+}
+
+#cloud5 {
+	top: 9%;
+	width: 175px;
+}
+#cloud6 {
+	top: 19%;
+	width: 50px;
+}
+
+}
