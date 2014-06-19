@@ -187,9 +187,10 @@ p.numbers {
 		display: block !important;
 		opacity: 1 !important;
 	}*/
-	/*#blades_image {
+	#blades_image {
 		top: 11%;
-	}*/
+		height: 81%;
+	}
 
 	#anem_image {
 		top: 58.5%;
