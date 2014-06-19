@@ -189,11 +189,14 @@ p.numbers {
 	}*/
 	#blades_image {
 		top: 11%;
-		height: 81%;
+		height: auto;
 	}
+
+#rotor_image, #gears_image { height: auto;}
 
 	#anem_image {
 		top: 58.5%;
+		height: auto;
 	}
 
 	#r-n-header, #r-n-header-content {
@@ -219,9 +222,6 @@ p.numbers {
 	}
 	#r-n-sc-info2 {
 		padding-top: 5px;
-	}
-	#subimages_class {
-		height: auto !important;
 	}
 }
 
