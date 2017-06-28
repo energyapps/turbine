@@ -1,3 +1,5 @@
+**Note! this is an old and unmanaged repo. Newer repo for this is https://github.com/energyapps/wind-turbine-jekyll**
+
 ## About
 
 This is a codebase that will allow energy.gov users to quickly get started developing new graphics and maps. By cloning this repo, you can immidiately begin coding. 
